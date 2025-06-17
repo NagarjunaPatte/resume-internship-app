@@ -13,5 +13,5 @@ import { Skills } from './components/skills/skills';
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'resume-internship-app';
+  protected title = 'portfolio';
 }
