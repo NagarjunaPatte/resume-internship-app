@@ -1,0 +1,32 @@
+<header class="w-full bg-white/10 backdrop-blur-md shadow-md">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo / Title -->
+    <div class="flex items-center space-x-3">
+    <img src="logo.png" alt="NP Logo" class="w-12 h-12 object-contain">
+    <span class="text-white text-xl font-bold">Nagarjuna</span>
+  </div>
+
+    <!-- Navigation Links (hidden on small screens) -->
+    <nav class="hidden md:flex space-x-6 text-gray-600">
+      <a href="#" class="hover:text-indigo-600">Home</a>
+      <a href="#" class="hover:text-indigo-600">About</a>
+      <a href="#" class="hover:text-indigo-600">Skills</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden" (click)="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="menuOpen" class="md:hidden bg-blue-700">
+    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Home</a>
+    <a href="#" class="block px-4 py-2 hover:bg-blue-800">About</a>
+    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Skills</a>
+  </div>
+</header>

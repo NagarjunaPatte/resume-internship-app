@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Header } from './components/header/header';
+import { FooterComponent } from './components/footer/footer.component';
+import { Hero } from './components/hero/hero';
+import { About } from './components/about/about';
+import { Skills } from './components/skills/skills';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,Header,FooterComponent,Hero,About,Skills],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
