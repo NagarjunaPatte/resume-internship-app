@@ -1,1 +1,35 @@
-<p>footer.component works!</p>
+<footer id="contact" class="bg-gray-900 text-gray-300 py-30">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+
+    <!-- Left: Personal Message -->
+    <div class="text-center md:text-left mb-4 md:mb-0">
+      <h3 class="text-xl font-semibold text-white">Let's Connect!</h3>
+      <p class="text-sm">Creative Developer building beautiful web apps.</p>
+    </div>
+
+    <!-- Center: Social Media Icons -->
+    <div class="flex space-x-6 mb-4 md:mb-0">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/nagarjunapatte" target="_blank" aria-label="LinkedIn"
+         class="hover:text-blue-400 transition duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM7 19H4V9h3v10zM5.5 7.5C4.672 7.5 4 6.828 4 6s.672-1.5 1.5-1.5S7 5.172 7 6s-.672 1.5-1.5 1.5zM20 19h-3v-5c0-1.103-.897-2-2-2s-2 .897-2 2v5h-3V9h3v1.528C13.408 9.663 14.368 9 15.5 9c1.93 0 3.5 1.57 3.5 3.5V19z"/>
+        </svg>
+      </a>
+
+      <!-- GitHub -->
+      <a href="#" (click)="$event.preventDefault()" target="_blank" aria-label="GitHub"
+         class="hover:text-white transition duration-300">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.079 3.292 9.387 7.863 10.914.574.104.782-.25.782-.555 0-.273-.01-.997-.015-1.958-3.2.695-3.877-1.541-3.877-1.541-.523-1.328-1.278-1.681-1.278-1.681-1.045-.715.08-.7.08-.7 1.157.082 1.767 1.188 1.767 1.188 1.027 1.76 2.693 1.252 3.347.958.104-.744.402-1.252.731-1.54-2.553-.29-5.239-1.276-5.239-5.679 0-1.254.447-2.28 1.181-3.085-.118-.29-.513-1.46.112-3.042 0 0 .964-.309 3.157 1.178.915-.255 1.896-.383 2.872-.387.976.004 1.957.132 2.873.387 2.192-1.487 3.154-1.178 3.154-1.178.627 1.582.232 2.752.114 3.042.736.805 1.179 1.831 1.179 3.085 0 4.412-2.69 5.385-5.252 5.669.413.353.78 1.047.78 2.112 0 1.526-.014 2.759-.014 3.134 0 .308.206.665.787.552C20.712 21.382 24 17.078 24 12c0-6.352-5.148-11.5-12-11.5z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Right: Copyright -->
+    <div class="text-center md:text-right text-sm">
+      © 2025 Nagarjuna. All rights reserved.
+    </div>
+
+  </div>
+</footer>
