@@ -1,10 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
+       providers: [provideAnimations()]
     }).compileComponents();
   });
 
